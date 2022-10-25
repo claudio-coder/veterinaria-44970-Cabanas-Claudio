@@ -1,0 +1,26 @@
+.footer {
+    background-color: black;
+    color: white;
+    height: 400px;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+
+.menu li a {
+    color: white;
+}
+
+
+.contactanos__datos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contactanos__titulo{
+    padding-left: 40px;
+}
+
+.contactanos_logo{
+    padding-left: 150px;
+}
