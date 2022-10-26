@@ -1,10 +1,7 @@
 .cuerpo{
-    /* background-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(./imagenes/quirofano_operando2.jpeg); */
     background-image: url(./ItemListContainer_img/pets_g1a65a1eec_1920.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: Poppins;
-    background-color: rgb(238, 201, 201);
     height: 550px;
-    margin: 0;
 }

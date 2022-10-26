@@ -1,20 +1,26 @@
-import React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
-import './Navbar.css';
-import logo_nuevo from './Navbar_img/logo_nuevo.jpeg';
-import CartWidget from '../CartWidget/CartWidget';
+import React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
+import MenuItem from "@mui/material/MenuItem";
+import logo_nuevo from "./Navbar_img/logo_nuevo.jpeg";
+import CartWidget from "../CartWidget/CartWidget";
 
-
-const pages = ['Mi Cuenta','Envio Prog', 'Perros','Gatos','Peces','Aves','Otras Especies'];
+const pages = [
+  "Mi Cuenta",
+  "Envio Prog",
+  "Perros",
+  "Gatos",
+  "Peces",
+  "Aves",
+  "Otras Especies",
+];
 
 export default function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -24,39 +30,37 @@ export default function Navbar() {
   };
 
   const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+    setAnchorElNav(true);
   };
 
-
   return (
-    <AppBar style={{backgroundColor: '#8570ae'}} position="static">
+    <AppBar style={{ backgroundColor: "#8570ae" }} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <img src={logo_nuevo} alt="" width={100}/>
+          <img src={logo_nuevo} alt="" width={100} />
           <Typography
             variant="h6"
             noWrap
             component="a"
             href="/"
             sx={{
-              ml:1,
+              ml: 1,
               mr: 2,
-              lineHeight:0.8,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              lineHeight: 0.8,
+              display: { xs: "none", md: "flex" },
+              flexDirection: "column",
+              fontFamily: "monospace",
               fontWeight: 500,
-              letterSpacing: '.1rem',
-              color: 'inherit',
-              textDecoration: 'none',
+              letterSpacing: ".1rem",
+              color: "inherit",
+              textDecoration: "none",
             }}
           >
-            Centro
-            <br />
-            Medico
-            <br />Veterinario
- 
+            <div>Centro</div>
+            <div>Medico</div>
+            <div>Veterinario</div>
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -71,24 +75,23 @@ export default function Navbar() {
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
+                vertical: "bottom",
+                horizontal: "left",
               }}
               keepMounted
               transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
+                vertical: "top",
+                horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: "block", md: "none" },
               }}
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography
-                  textAlign="center">{page}</Typography>
+                  <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -100,38 +103,36 @@ export default function Navbar() {
             href=""
             sx={{
               mr: 0,
-              lineHeight:0.8,
+              lineHeight: 0.8,
 
-              display: { xs: 'flex', md: 'none' },
+              display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: "monospace",
               fontWeight: 500,
-              letterSpacing: '.1rem',
-              color: 'inherit',
-              textDecoration: 'none',
+              flexDirection: "column",
+              letterSpacing: ".1rem",
+              color: "inherit",
+              textDecoration: "none",
             }}
           >
-            Centro
-            <br />
-            Medico
-            <br />Veterinario
- 
+            <div>Centro</div>
+            <div>Medico</div>
+            <div>Veterinario</div>
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page}
               </Button>
             ))}
           </Box>
-          <CartWidget/>
+          <CartWidget />
         </Toolbar>
       </Container>
     </AppBar>
   );
 }
-

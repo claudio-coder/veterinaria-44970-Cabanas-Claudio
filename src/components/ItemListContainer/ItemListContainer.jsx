@@ -1,10 +1,10 @@
-import React from 'react';
-import './ItemListContainer.css';
+import React from "react";
+import "./ItemListContainer.css";
 
-export default function ItemListContainer({greeting}) {
+export default function ItemListContainer({ greeting }) {
   return (
-    <div className='cuerpo'>
+    <div className="cuerpo">
       <h1>{greeting}</h1>
     </div>
-  )
+  );
 }
