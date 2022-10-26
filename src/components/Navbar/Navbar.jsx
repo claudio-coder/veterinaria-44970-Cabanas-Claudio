@@ -11,15 +11,16 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import logo_nuevo from "./Navbar_img/logo_nuevo.jpeg";
 import CartWidget from "../CartWidget/CartWidget";
+import "./Navbar.css";
 
 const pages = [
-  "Mi Cuenta",
-  "Envio Prog",
-  "Perros",
-  "Gatos",
-  "Peces",
-  "Aves",
-  "Otras Especies",
+  { label: "Mi Cuenta", link: "/" },
+  { label: "Envio Prog", link: "/envio" },
+  { label: "Perros", link: "/perros" },
+  { label: "Gatos", link: "/gatos" },
+  { label: "Peces", link: "/peces" },
+  { label: "Aves", link: "/aves" },
+  { label: "Otras Especies", link: "/otrasespecies" },
 ];
 
 export default function Navbar() {
@@ -91,7 +92,9 @@ export default function Navbar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center">
+                    <a href={page.link}>{page.label}</a>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -122,11 +125,13 @@ export default function Navbar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
-                key={page}
+                key={page.label}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                <a className="titulos" href={page.link}>
+                  {page.label}
+                </a>
               </Button>
             ))}
           </Box>

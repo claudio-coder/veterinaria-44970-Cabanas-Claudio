@@ -5,9 +5,7 @@ import map_marker from "./Footer_img/map_marker.webp";
 import fono_blanco from "./Footer_img/fono_blanco.png";
 import reloj from "./Footer_img/reloj.jpg";
 import sobreblanconegro from "./Footer_img/sobreblanconegro.webp";
-import Grid from "@mui/material/Grid"; // Grid version 1
-// import Grid2 from '@mui/material/Unstable_Grid2'; // Grid version 2
-// import {Grid} from '@material-ui/core';
+import Grid from "@mui/material/Grid";
 
 export default function Footer() {
   return (
