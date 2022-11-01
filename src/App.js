@@ -9,7 +9,7 @@ export default function App() {
    <div>
     <Navbar/>
     {/* <BodyApp/> */}
-    <ItemListContainer greeting={"CENTRO MEDICO VETERINARIO"}/>
+    <ItemListContainer/>
     <Footer/>
    </div>
   );

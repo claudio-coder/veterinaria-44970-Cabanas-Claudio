@@ -1,7 +1,37 @@
 .cuerpo{
-    background-image: url(./ItemListContainer_img/pets_g1a65a1eec_1920.jpg);
+    background-color: antiquewhite;
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: Poppins;
-    height: 550px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    
 }
+.target {
+    background-color: white;
+    color: black;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgb(218, 150, 150);
+    transition: transform 0.3s;
+    display: grid;
+    grid-template-columns: repeat(1,4fr);
+    align-items: center;
+    justify-items: center;
+}
+    .target:hover {
+        transform: perspective(420px) translateZ(40px);
+    }
+    .nomargin{
+        margin: 0;
+    }

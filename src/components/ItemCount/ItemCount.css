@@ -1,0 +1,41 @@
+
+    .counter{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       width: 90px;
+    }
+    .buttoninc{
+        width: 30px;
+        text-align: center;
+        background-color: rgb(162, 162, 231);
+        border-radius: 5px;
+
+    }
+    .buttondec{
+        width: 30px;
+        text-align: center;
+        background-color: white;
+        border-radius: 5px;
+
+    }
+    .buttonresult{
+        width: 30px;
+        text-align: center;
+        background-color: white;
+        border-radius: 5px;
+
+
+    }
+    .buy{
+        background-color: rgb(161, 207, 161);
+        border-radius: 5px;
+
+    }
+    .cart_counter{
+       display: grid; 
+       grid-template-columns: repeat(2,1fr);
+       align-items: center;
+       justify-items: center;
+
+    }
