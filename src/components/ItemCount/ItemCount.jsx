@@ -22,20 +22,12 @@ export default function Itemcount({ initial, stock, onAdd }) {
           -
         </button>
         <span className="buttonresult">{suma}</span>
-        <button
-          disabled={suma >= stock}
-          onClick={increase}
-          className="buttoninc"
-        >
+        <button disabled={suma >= stock} onClick={increase} className="buttoninc">
           +
         </button>
       </div>
       <div className="cart">
-        <button
-          className="buy"
-          disabled={stock <= 0}
-          onClick={() => onAdd(suma)}
-        >
+        <button className="buy" disabled={stock <= 0} onClick={() => onAdd(suma)}>
           Comprar
         </button>
       </div>
