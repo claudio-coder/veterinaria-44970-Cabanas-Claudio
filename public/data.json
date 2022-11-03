@@ -1,0 +1,35 @@
+[
+    {
+        "id": "1",
+        "path": "/productos/razas-perros.jpeg",
+        "text":"Alimentos y accesorios para perros"
+        
+    },
+    {
+        "id": "2",
+        "path": "/productos/gatos.jpeg",
+        "text":"Alimentos y accesorios para gatos"
+        
+    }, {
+        "id": "3",
+        "path": "/productos/pez-payaso.jpeg",
+        "text":"Alimentos y accesorios para peces"
+        
+    }, {
+        "id": "4",
+        "path": "/productos/aves.jpeg",
+        "text":"Alimentos y accesorios para aves"
+        
+    }, {
+        "id": "5",
+        "path": "/productos/conejos.png",
+        "text":"Alimentos y accesorios para conejos"
+        
+    }, {
+        "id": "6",
+        "path": "/productos/animal-exotico.jpeg",
+        "text":"Alimentos y accesorios para exóticos"
+        
+    }
+]
+

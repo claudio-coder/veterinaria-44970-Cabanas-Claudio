@@ -14,13 +14,15 @@ import CartWidget from "../CartWidget/CartWidget";
 import "./Navbar.css";
 
 const pages = [
-  { label: "Mi Cuenta", link: "/" },
-  { label: "Envio Prog", link: "/envio" },
+  { label: "Inicio", link: "/" },
   { label: "Perros", link: "/perros" },
   { label: "Gatos", link: "/gatos" },
   { label: "Peces", link: "/peces" },
   { label: "Aves", link: "/aves" },
-  { label: "Otras Especies", link: "/otrasespecies" },
+  { label: "Conejos", link: "/conejos" },
+  { label: "Exóticos", link: "/exoticos" },
+  { label: "Mi Cuenta", link: "/Cuenta" },
+  { label: "Envio Prog", link: "/envio" },
 ];
 
 export default function Navbar() {

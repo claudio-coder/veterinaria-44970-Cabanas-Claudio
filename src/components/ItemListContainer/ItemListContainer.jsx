@@ -1,104 +1,80 @@
 import React, { useEffect } from "react";
-import ItemCount from "../ItemCount/ItemCount";
+import { useState } from "react";
+import ItemDetailsContainer from "../ItemDetailsContainer";
 import "./ItemListContainer.css";
-import oldprince from "./ItemListContainer_img/oldprince.webp";
-import royalcaninadult from "./ItemListContainer_img/royalcaninadult.jpeg";
-import vitalcan from "./ItemListContainer_img/vitalcan.webp";
 
 export default function ItemListContainer() {
+  const [open, setOpen] = useState(false);
+  const [selectedProductId, setSelectedProductId] = useState();
+  const [arrayProductos, setArrayProductos] = useState([]);
+
   useEffect(() => {
-    // fetch("https://pokeapi.co/api/v2/pokemon?limit=10&offset=0")
-    fetch("./data.json")
+    fetch("data.json")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        setArrayProductos(data);
       })
       .catch((e) => {
-        console.log("cagamos");
+        console.log("ERROR");
       })
       .finally(() => {
-        console.log("ya termino");
+        console.log("PASO");
       });
   }, []);
 
   const onAdd = (cantidad) => {
     console.log(`Compraste ${cantidad} unidades`);
   };
+
+  const onCardClick = (id) => {
+    setSelectedProductId(id);
+    setOpen(true);
+  };
+
   return (
-    <div className="cuerpo">
-      <div className="target">
-        <div>
-          <img src={oldprince} alt="" width={250} />
-        </div>
-        <div>
-          <p
-            className="nomargin"
-            style={{ textAlign: "center", fontWeight: "bold" }}
+    <div>
+      <div className="cuerpo">
+        {arrayProductos.map((item) => (
+          <div
+            className="mascota"
+            key={item.id}
+            onClick={() => onCardClick(item.id)}
           >
-            Alimento Old Prince Novel Cordero y Arroz Perro Adulto Mediano y
-            Grande - 15 Kg
-          </p>
-        </div>
-        <div>
-          <h2
-            className="nomargin"
-            style={{ textAlign: "center", fontWeight: "bold" }}
-          >
-            $ 8906,00
-          </h2>
-        </div>
-        <div>
-          <ItemCount initial={1} stock={3} onAdd={onAdd} />
-        </div>
+            <img src={item.path} alt="" width={300} className="mascota_img" />
+            <h1>{item.text}</h1>
+          </div>
+        ))}
       </div>
-      <div className="target">
-        <div>
-          <img src={royalcaninadult} alt="" width={250} />
-        </div>
-        <div>
-          <p
-            className="nomargin"
-            style={{ textAlign: "center", fontWeight: "bold" }}
-          >
-            Alimento Royal Canin para Perro Medium Adulto - 15kg
-          </p>
-        </div>
-        <div>
-          <h2
-            className="nomargin"
-            style={{ textAlign: "center", fontWeight: "bold" }}
-          >
-            $ 8960,00
-          </h2>
-        </div>
-        <div>
-          <ItemCount initial={1} stock={5} onAdd={onAdd} />
-        </div>
-      </div>
-      <div className="target">
-        <div>
-          <img src={vitalcan} alt="" width={250} />
-        </div>
-        <div>
-          <p
-            className="nomargin"
-            style={{ textAlign: "center", fontWeight: "bold" }}
-          >
-            Alimento Balanced Perro Adulto Raza Mediana - 20+2kg
-          </p>
-        </div>
-        <div>
-          <h2
-            className="nomargin"
-            style={{ textAlign: "center", fontWeight: "bold" }}
-          >
-            $ 8875,00
-          </h2>
-        </div>
-        <div>
-          <ItemCount initial={1} stock={8} onAdd={onAdd} />
-        </div>
-      </div>
+      {open && (
+        <ItemDetailsContainer
+          productId={selectedProductId}
+          open={open}
+          handleClose={() => setOpen(false)}
+          onAdd={onAdd}
+        />
+      )}
     </div>
+
+    // <div>
+    //   <div className="cuerpo">
+    //     {arrayProductos.map((item) => (
+    //       <div
+    //         className="target"
+    //         key={item.id}
+    //         onClick={() => onCardClick(item.id)}
+    //       >
+    //         <img src={item.path} alt="" width={250} />
+    //       </div>
+    //     ))}
+    //   </div>
+    //   {open && (
+    //     <ItemDetailsContainer
+    //       productId={selectedProductId}
+    //       open={open}
+    //       handleClose={() => setOpen(false)}
+    //       onAdd={onAdd}
+    //     />
+    //   )}
+    // </div>
   );
 }

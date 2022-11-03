@@ -18,9 +18,7 @@ export default function Itemcount({ initial, stock, onAdd }) {
   return (
     <div className="cart_counter">
       <div className="counter">
-        <button disabled={suma <= 0} onClick={decrease} className="buttondec">
-          -
-        </button>
+        <button disabled={suma <= 0} onClick={decrease} className="buttondec"></button>
         <span className="buttonresult">{suma}</span>
         <button disabled={suma >= stock} onClick={increase} className="buttoninc">
           +

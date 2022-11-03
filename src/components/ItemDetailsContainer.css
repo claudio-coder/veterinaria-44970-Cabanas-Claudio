@@ -1,0 +1,20 @@
+.target2 {
+    /* background-color: white; */
+    background-color: red;
+    color: black;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgb(218, 150, 150);
+    transition: transform 0.3s;
+    display: grid;
+    grid-template-columns: repeat(1,4fr);
+    align-items: center;
+    justify-items: center;
+}
