@@ -18,3 +18,15 @@
     align-items: center;
     justify-items: center;
 }
+.cuerpo{
+    background-color: antiquewhite;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: Poppins;
+    height: 800px;
+    display: flex;
+
+    /* grid-template-columns: repeat(2,2fr); */
+     justify-items: center;
+    align-items: center;
+}

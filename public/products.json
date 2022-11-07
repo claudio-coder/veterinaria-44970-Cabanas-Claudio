@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Alimento balanceado dog chaut",
+        "type": "alimento",
+        "description": "Sarasa"
+    },
+    {
+        "id": 2,
+        "name": "bozal perro",
+        "type": "accesorio",
+        "description": "Sarasa 2"
+    },
+    {
+        "id": 3,
+        "name": "Alimento balanceado gatito",
+        "type": "alimento",
+        "description": "Sarasa 2"
+    },
+    {
+        "id": 4,
+        "name": "piedritas",
+        "type": "accesorio",
+        "description": "Sarasa 2"
+    }
+]

@@ -1,35 +1,37 @@
 [
     {
-        "id": "1",
-        "path": "/productos/razas-perros.jpeg",
-        "text":"Alimentos y accesorios para perros"
-        
+        "id": 1,
+        "category": "perro",
+        "description": "Alimentos y accesorios para perros",
+        "products": [
+            {
+                "id": 1,
+                "name": "Alimento balanceado dog chaut",
+                "type": "alimento"
+            },
+            {
+                "id": 2,
+                "name": "bozal perro",
+                "type": "accesorio"
+            }
+        ]
     },
     {
-        "id": "2",
-        "path": "/productos/gatos.jpeg",
-        "text":"Alimentos y accesorios para gatos"
-        
-    }, {
-        "id": "3",
-        "path": "/productos/pez-payaso.jpeg",
-        "text":"Alimentos y accesorios para peces"
-        
-    }, {
-        "id": "4",
-        "path": "/productos/aves.jpeg",
-        "text":"Alimentos y accesorios para aves"
-        
-    }, {
-        "id": "5",
-        "path": "/productos/conejos.png",
-        "text":"Alimentos y accesorios para conejos"
-        
-    }, {
-        "id": "6",
-        "path": "/productos/animal-exotico.jpeg",
-        "text":"Alimentos y accesorios para exóticos"
-        
+        "id": 2,
+        "category": "gato",
+        "description": "Alimentos y accesorios para gatos",
+        "products": [
+            {
+                "id": 3,
+                "name": "Alimento balanceado gatito",
+                "type": "alimento"
+            },
+            {
+                "id": 4,
+                "name": "piedritas",
+                "type": "accesorio"
+            }
+        ]
     }
 ]
 

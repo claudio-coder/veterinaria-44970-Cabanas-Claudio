@@ -12,11 +12,12 @@ export default function ItemListContainer() {
 
   const [open, setOpen] = useState(false);
   // const [selectedProductId, setSelectedProductId] = useState();
-  const [arrayProductos, setArrayProductos] = useState([]);
+  const [categories, setCategories] = useState([]);
   const [selectRaza, setTipoRaza] = useState([]);
 
   useEffect(() => {
-    setArrayProductos([]);
+    setCategories([]);
+
     setTimeout(() => {
       // fetch(!!idCategory ? `${idCategory}.json` : `/data.json`)
       fetch(`/data.json`)
@@ -24,9 +25,9 @@ export default function ItemListContainer() {
         .then((data) => {
           // console.log("mi data", data);
           if (!!idraza) {
-            setArrayProductos(data.filter((item) => item.raza === idraza));
+            setCategories(data.filter((item) => item.category === idraza));
           } else {
-            setArrayProductos(data);
+            setCategories(data);
           }
         });
     }, 2000);
@@ -36,80 +37,31 @@ export default function ItemListContainer() {
     console.log(`Compraste ${cantidad} unidades`);
   };
 
-  // const onCardClick = (id, raza) => {
-  const onCardClick = (raza) => {
-    // setSelectedProductId(id);
-    setTipoRaza(raza);
-
-    console.log("aca debe salir");
-    // console.log(id);
-    console.log(raza);
-    setOpen(true);
-  };
-
-  console.log("aca esoy ya", arrayProductos);
-
   return (
     <div>
       <div className="cuerpo">
-        {!arrayProductos.length ? (
+        {!categories.length ? (
           <CircularProgress />
         ) : (
-          <Grid container spacing={2} justifyContent="" alignItems="center">
-            {arrayProductos.map((item, idx) => (
-              // {productos.map((item) => (
-              <Grid item xs={6} key={`item-${idx}`}>
-                {/* <Link
-                  to={
-                    location.pathname === `/category/${item.category}`
-                      ? `/category/${item.category}/alimentos-y-acessorios`
-                      : `/category/${item.category}`
-
-                  }
-uwnefyn3yenf3,s
-                > */}
-                {/* <div className="mascota" key={item.id} onClick={() => onCardClick(item.id)(item.raza)}> */}
-                <div className="mascota" key={item.id} onClick={() => onCardClick(item.raza)}>
-                  <img src={item.path} alt="" width={300} className="mascota_img" />
-                  <h1>{item.text}</h1>
-                </div>
-                {/* </Link> */}
+          categories.map((aCategory, idx) => (
+            <div key={`category-${idx}`}>
+              <h1>{aCategory.description}</h1>
+              <Grid container spacing={2} justifyContent="" alignItems="center">
+                {aCategory.products.map((aProduct, productIdx) => (
+                  <Grid item xs={6} key={`product-${productIdx}`}>
+                    <Link to={`/item/${aProduct.id}`}>
+                      <div className="mascota" key={aProduct.id}>
+                        {/* <img src={item.path} alt="" width={300} className="mascota_img" /> */}
+                        <h1>{aProduct.name}</h1>
+                      </div>
+                    </Link>
+                  </Grid>
+                ))}
               </Grid>
-            ))}
-          </Grid>
+            </div>
+          ))
         )}
       </div>
-      {open && (
-        <ItemDetailsContainer
-          // productId={selectedProductId}
-          open={open}
-          handleClose={() => setOpen(false)}
-          onAdd={onAdd}
-          bicho={selectRaza}
-        />
-      )}
     </div>
-
-    // <div>
-    //   <div className="cuerpo">
-    //     {arrayProductos.map((item) => (
-    //       <div
-    //         className="target"
-    //         key={item.id}
-    //         onClick={() => onCardClick(item.id)}
-    //       >
-    //         <img src={item.path} alt="" width={250} />
-    //       </div>
-    //     ))}
-    //   </div>
-    //   {open && (
-    //     <ItemDetailsContainer
-    //       productId={selectedProductId}
-    //       open={open}
-    //       handleClose={() => setOpen(false)}
-    //       onAdd={onAdd}
-    //     />
-    //   )}
-    // </div>
   );
 }

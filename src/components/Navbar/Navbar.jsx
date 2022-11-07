@@ -12,17 +12,18 @@ import MenuItem from "@mui/material/MenuItem";
 import logo_nuevo from "./Navbar_img/logo_nuevo.jpeg";
 import CartWidget from "../CartWidget/CartWidget";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const pages = [
   { label: "Inicio", link: "/" },
-  { label: "Perros", link: "/perros" },
-  { label: "Gatos", link: "/gatos" },
-  { label: "Peces", link: "/peces" },
-  { label: "Aves", link: "/aves" },
-  { label: "Conejos", link: "/conejos" },
-  { label: "Exóticos", link: "/exoticos" },
-  { label: "Mi Cuenta", link: "/Cuenta" },
-  { label: "Envio Prog", link: "/envio" },
+  { label: "Perros", link: "/raza/perros" },
+  { label: "Gatos", link: "/raza/gatos" },
+  { label: "Peces", link: "/raza/peces" },
+  { label: "Aves", link: "/raza/aves" },
+  { label: "Conejos", link: "/raza/conejos" },
+  { label: "Exóticos", link: "/raza/exoticos" },
+  { label: "Mi Cuenta", link: "/MiCuenta" },
+  { label: "Envio Prog", link: "/EnvioProg" },
 ];
 
 export default function Navbar() {
@@ -126,14 +127,13 @@ export default function Navbar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Button
-                key={page.label}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                <a className="titulos" href={page.link}>
+              <Button key={page.label} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
+                <Link className="titulos" to={page.link}>
                   {page.label}
-                </a>
+                </Link>
+                {/* <a className="titulos" href={page.link}>
+                  {page.label}
+                </a> */}
               </Button>
             ))}
           </Box>

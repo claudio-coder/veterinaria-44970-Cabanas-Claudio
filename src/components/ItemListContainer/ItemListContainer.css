@@ -4,9 +4,10 @@
     background-repeat: no-repeat;
     font-family: Poppins;
     height: 800px;
-    display: grid;
-    grid-template-columns: repeat(2,2fr);
-    justify-items: center;
+    display: flex;
+
+    /* grid-template-columns: repeat(2,2fr); */
+     justify-items: center;
     align-items: center;
     
 }
@@ -47,5 +48,5 @@
 
 }
 .mascota_img{
-    border-radius: 150px;
+    border-radius: 50px;
 }
