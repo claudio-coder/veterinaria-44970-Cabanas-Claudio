@@ -1,11 +1,10 @@
 .cuerpo{
     background-color: antiquewhite;
-    background-size: 100%;
+    /* background-size: 100%; */
     background-repeat: no-repeat;
     font-family: Poppins;
     height: 800px;
     display:grid;
-
     grid-template-columns: repeat(3,2fr);
      justify-items: center;
     align-items: center;
@@ -15,8 +14,6 @@
     background-color: white;
     color: black;
     height: 130px;
-    /* display: flex;
-    flex-direction: column; */
     width: 100px;
     justify-content: space-evenly;
     align-items: center;
@@ -26,7 +23,6 @@
     box-shadow: 0 25px 50px -12px rgb(218, 150, 150);
     transition: transform 0.3s;
     display: grid;
-    /* grid-template-columns: repeat(1,2fr); */
     align-items: center;
     justify-items: center;
     text-decoration: none;
@@ -58,11 +54,10 @@
     align-items: center;
 justify-items: center;
 }
-.caca3{
+.category_name{
     text-align: center;
 }
 .caca4{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-
 }

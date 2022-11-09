@@ -37,7 +37,8 @@ export default function ItemListContainer() {
         ) : (
           categories.map((aCategory, idx) => (
             <div key={`category-${idx}`}>
-              <h2 className="caca3">{aCategory.description}</h2>
+              <h2 className="category_name">{aCategory.description}</h2>
+              {/* <Grid container spacing={6} item xs={6} justifyContent="" alignItems="center"> */}
               <div className="caca4">
                 {aCategory.products.map((aProduct, productIdx) => (
                   <Grid item xs={6} key={`product-${productIdx}`}>
@@ -50,6 +51,7 @@ export default function ItemListContainer() {
                   </Grid>
                 ))}
               </div>
+              {/* </Grid> */}
             </div>
           ))
         )}
