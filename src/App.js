@@ -11,9 +11,7 @@ import ItemDetailsContainer from "./components/ItemDetailsContainer";
 export default function App() {
   return (
     <BrowserRouter>
-      {/* PONGO COMPONENTES QUE QUIERO QUE ESTEN EN TODAS LAS RUTAS */}
       <Navbar />
-      {/* ACA DECLARO RUTAS PUNTUALES */}
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
         <Route path="/raza" element={<ItemListContainer/>}/>
@@ -21,11 +19,7 @@ export default function App() {
         <Route path="/envioprog" element={<EnvioProg/>} />
         <Route path="/raza/:idraza" element={<ItemListContainer/>}/>
         <Route path="/item/:iditem" element={<ItemDetailsContainer/>}/>
-
-        {/* <Route /> */}
-        {/* <Route /> */}
       </Routes>
-      {/* PONGO COMPONENTES QUE QUIERO QUE ESTEN EN TODAS LAS RUTAS ABAJO DE TODO*/}
       <Footer />
     </BrowserRouter>
   );

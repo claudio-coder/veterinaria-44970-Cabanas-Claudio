@@ -20,8 +20,9 @@ export default function ItemDetailsContainer() {
 
   return (
     <div>
-      <h1>{product?.name}</h1>
+      {/* <h1>{product?.name}</h1> */}
       {/* <ItemDetails product={product} open={open} handleClose={handleClose} onAdd={onAdd} /> */}
+      <ItemDetails product={product} />
     </div>
   );
 }

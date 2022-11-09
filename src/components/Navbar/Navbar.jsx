@@ -131,9 +131,6 @@ export default function Navbar() {
                 <Link className="titulos" to={page.link}>
                   {page.label}
                 </Link>
-                {/* <a className="titulos" href={page.link}>
-                  {page.label}
-                </a> */}
               </Button>
             ))}
           </Box>

@@ -1,37 +1,281 @@
 [
     {
         "id": 1,
-        "category": "perro",
+        "category": "perros",
         "description": "Alimentos y accesorios para perros",
         "products": [
             {
                 "id": 1,
-                "name": "Alimento balanceado dog chaut",
-                "type": "alimento"
+                "name": "Alimento Royal Canin",
+                "type": "alimento",
+                "path":"/productos/royalcaninadult.jpeg"
             },
             {
                 "id": 2,
-                "name": "bozal perro",
-                "type": "accesorio"
+                "name": "Alimento Vitalcan",
+                "type": "alimento",
+                "path":"/productos/vitalcan.webp"
             }
-        ]
-    },
-    {
-        "id": 2,
-        "category": "gato",
-        "description": "Alimentos y accesorios para gatos",
-        "products": [
+            ,
             {
                 "id": 3,
-                "name": "Alimento balanceado gatito",
-                "type": "alimento"
+                "name": "Alimento Oldprince",
+                "type": "alimento",
+                "path":"/productos/oldprince.webp"
             },
             {
                 "id": 4,
-                "name": "piedritas",
-                "type": "accesorio"
+                "name": "Collar",
+                "type": "accesorio",
+                "path":"/productos/collar_perro.webp"
+            },
+            {
+                "id": 5,
+                "name": "Bozal perro",
+                "type": "accesorio",
+                "path":"/productos/bozal_perro.webp"
+            }
+            ,
+            {
+                "id": 6,
+                "name": "Pelota Con Sonido",
+                "type": "accesorio",
+                "path":"/productos/pelota_perro.webp"
             }
         ]
+    
+    },
+    {
+        "id": 2,
+        "category": "gatos",
+        "description": "Alimentos y accesorios para gatos",
+        "products": [
+            {
+                "id": 7,
+                "name": "Alimento Excellent",
+                "type": "alimento",
+                "path":"/productos/alimento_gatos_exelent.webp"
+            },
+            {
+                "id": 8,
+                "name": "Alimento Excellent",
+                "type": "alimento",
+                "path":"/productos/alimento_gatos_exelent2.png"
+            }
+            ,
+            {
+                "id": 9,
+                "name": "Alimento Excellent",
+                "type": "alimento",
+                "path":"/productos/alimento_gatos_exelent3.png"
+            },
+            {
+                "id": 10,
+                "name": "Rascador",
+                "type": "accesorio",
+                "path":"/productos/juguete_gato1.webp"
+            },
+            {
+                "id": 11,
+                "name": "Juguetes",
+                "type": "accesorio",
+                "path":"/productos/juguetes_gatos2.webp"
+            }
+            ,
+            {
+                "id": 12,
+                "name": "Juguete Interactivo",
+                "type": "accesorio",
+                "path":"/productos/juguete_gato3.webp"
+            }
+            
+        ]
+    },
+    {
+        "id": 3,
+        "category": "peces",
+        "description": "Alimentos y accesorios para peces",
+        "products": [
+            {
+                "id": 13,
+                "name": "Alimento en escamas",
+                "type": "alimento",
+                "path":"/productos/alimento_peces1.webp"
+            },
+            {
+                "id": 14,
+                "name": "Alimento Nutrafin",
+                "type": "alimento",
+                "path":"/productos/alimento_peces2.webp"
+            }
+            ,
+            {
+                "id": 15,
+                "name": "Alimento Shulet",
+                "type": "alimento",
+                "path":"/productos/alimento_peces3.webp"
+            },
+            {
+                "id": 16,
+                "name": "Aqua Gravel",
+                "type": "accesorio",
+                "path":"/productos/accesorio_peces1.webp"
+            },
+            {
+                "id": 17,
+                "name": "Trampa para Cria",
+                "type": "accesorio",
+                "path":"/productos/accesorio_peces2.webp"
+            }
+            ,
+            {
+                "id": 18,
+                "name": "Bettera Atman",
+                "type": "accesorio",
+                "path":"/productos/accesorio_peces3.webp"
+            }
+            
+            
+        ]
+    },
+    {
+        "id": 4,
+        "category": "aves",
+        "description": "Alimentos y accesorios para aves",
+        "products": [
+            {
+                "id": 19,
+                "name": "Tromipix Para Loros",
+                "type": "alimento",
+                "path":"/productos/alimento_aves1.webp"
+            },
+            {
+                "id": 20,
+                "name": "Alimento Aves",
+                "type": "alimento",
+                "path":"/productos/alimento_aves2.png"
+            }
+            ,
+            {
+                "id": 21,
+                "name": "Mix para Loros",
+                "type": "alimento",
+                "path":"/productos/alimento_aves3.png"
+            },
+            {
+                "id": 22,
+                "name": "Jaula",
+                "type": "accesorio",
+                "path":"/productos/accesorio_aves1.webp"
+            },
+            {
+                "id": 23,
+                "name": "Jaula Redonda",
+                "type": "accesorio",
+                "path":"/productos/accesorio_aves2.webp"
+            }
+            ,
+            {
+                "id": 24,
+                "name": "Bebedero",
+                "type": "accesorio",
+                "path":"/productos/accesorio_aves3.webp"
+            }
+        ]
+        
+    },
+    {
+        "id": 5,
+        "category": "conejos",
+        "description": "Alimentos y accesorios para conejos",
+        "products": [
+            {
+                "id": 25,
+                "name": "Alimento para Conejos",
+                "type": "alimento",
+                "path":"/productos/alimento_conejo1.png"
+            },
+            {
+                "id": 26,
+                "name": "Alimento Nelsoni",
+                "type": "alimento",
+                "path":"/productos/alimento_conejo2.png"
+            }
+            ,
+            {
+                "id": 27,
+                "name": "Alimento Especial Conejos",
+                "type": "alimento",
+                "path":"/productos/alimento_conejo3.webp"
+            },
+            {
+                "id": 28,
+                "name": "Arnés Pretal",
+                "type": "accesorio",
+                "path":"/productos/accesorio_conejo1.webp"
+            },
+            {
+                "id": 29,
+                "name": "Conejera Madera",
+                "type": "accesorio",
+                "path":"/productos/accesorio_conejo2.webp"
+            }
+            ,
+            {
+                "id": 30,
+                "name": "Jaula Conejo",
+                "type": "accesorio",
+                "path":"/productos/accesorio_conejo3.webp"
+            }
+        ]
+        
+    },
+    {
+        "id": 6,
+        "category": "exoticos",
+        "description": "Alimentos y accesorios para exóticos",
+        "products": [
+            {
+                "id": 31,
+                "name": "Alimento para tortugas",
+                "type": "alimento",
+                "path":"/productos/alimento_exotico1.webp"
+            },
+            {
+                "id": 32,
+                "name": "Alimento Vitalcan",
+                "type": "alimento",
+                "path":"/productos/vitalcan.webp"
+            }
+            ,
+            {
+                "id": 33,
+                "name": "Alimento Oldprince",
+                "type": "alimento",
+                "path":"/productos/oldprince.webp"
+            },
+            {
+                "id": 34,
+                "name": "Terrario Para Reptil",
+                "type": "acesorio",
+                "path":"/productos/accesorio_exotico1.webp"
+            },
+            {
+                "id": 35,
+                "name": "Bozal perro",
+                "type": "acesorio",
+                "path":"/productos/bozal_perro.webp"
+            }
+            ,
+            {
+                "id": 36,
+                "name": "Pelota Con Sonido",
+                "type": "acesorio",
+                "path":"/productos/pelota_perro.webp"
+            }
+        ]
+        
     }
+
 ]
 
