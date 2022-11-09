@@ -25,9 +25,9 @@ export default function ItemListContainer() {
     }, 2000);
   }, [idraza]);
 
-  const onAdd = (cantidad) => {
-    console.log(`Compraste ${cantidad} unidades`);
-  };
+  // const onAdd = (cantidad) => {
+  //   console.log(`Compraste ${cantidad} unidades`);
+  // };
 
   return (
     <div>
@@ -38,12 +38,11 @@ export default function ItemListContainer() {
           categories.map((aCategory, idx) => (
             <div key={`category-${idx}`}>
               <h2 className="category_name">{aCategory.description}</h2>
-              {/* <Grid container spacing={6} item xs={6} justifyContent="" alignItems="center"> */}
-              <div className="caca4">
+              <div className="target_general">
                 {aCategory.products.map((aProduct, productIdx) => (
                   <Grid item xs={6} key={`product-${productIdx}`}>
                     <Link to={`/item/${aProduct.id}`} className="target">
-                      <div key={aProduct.id} className="caca">
+                      <div key={aProduct.id} className="target_img">
                         <img src={aProduct.path} alt="" width={80} className="mascota_img" />
                         <p> {aProduct.name}</p>
                       </div>
@@ -51,7 +50,6 @@ export default function ItemListContainer() {
                   </Grid>
                 ))}
               </div>
-              {/* </Grid> */}
             </div>
           ))
         )}

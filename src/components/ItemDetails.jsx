@@ -1,7 +1,7 @@
 import React from "react";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import Modal from "@mui/material/Modal";
+// import Box from "@mui/material/Box";
+// import Typography from "@mui/material/Typography";
+// import Modal from "@mui/material/Modal";
 import ItemCount from "./ItemCount/ItemCount";
 import "./ItemDetails.css";
 
@@ -22,7 +22,7 @@ export default function ItemDetails({ product, open, handleClose, onAdd }) {
                 <h1>{product?.price}</h1>
               </div>
               <div>
-                <h2> STOCK {product?.stock} disponibles</h2>
+                <h2> Stock {product?.stock} disponibles</h2>
               </div>
             </div>
 

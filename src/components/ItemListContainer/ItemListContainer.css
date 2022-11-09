@@ -48,7 +48,7 @@
 .mascota_img{
     border-radius: 50px;
 }
-.caca{
+.target_img{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +57,7 @@ justify-items: center;
 .category_name{
     text-align: center;
 }
-.caca4{
+.target_general{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }

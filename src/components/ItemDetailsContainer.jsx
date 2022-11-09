@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import ItemDetails from "./ItemDetails";
 import { useParams } from "react-router-dom";
-import "./ItemDetailsContainer.css";
+// import "./ItemDetailsContainer.css";
 
 // export default function ItemDetailsContainer({ productId, open, handleClose, onAdd, bicho }) {
 export default function ItemDetailsContainer() {
@@ -20,8 +20,6 @@ export default function ItemDetailsContainer() {
 
   return (
     <div>
-      {/* <h1>{product?.name}</h1> */}
-      {/* <ItemDetails product={product} open={open} handleClose={handleClose} onAdd={onAdd} /> */}
       <ItemDetails product={product} />
     </div>
   );
