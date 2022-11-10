@@ -2,7 +2,7 @@
     .counter{
        display: flex;
        flex-direction: row;
-       justify-content: space-around;
+       justify-content: space-between;
        width: 90px;
     }
     .buttoninc{

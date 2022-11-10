@@ -30,8 +30,8 @@ export default function ItemDetails({ product, open, handleClose, onAdd }) {
               <ItemCount initial={1} stock={product?.stock} onAdd={onAdd} />
             </div>
           </div>
-          <div className="description">
-            <h2>Descripción: {product?.description}</h2>
+          <div>
+            <h2 className="description">Descripción: {product?.description}</h2>
           </div>
         </div>
       </div>

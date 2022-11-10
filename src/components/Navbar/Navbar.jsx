@@ -78,6 +78,7 @@ export default function Navbar() {
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
+              disableScrollLock={true}
               anchorOrigin={{
                 vertical: "bottom",
                 horizontal: "left",
