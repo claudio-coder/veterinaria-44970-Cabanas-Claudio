@@ -135,7 +135,10 @@ export default function Navbar() {
               </Button>
             ))}
           </Box>
-          <CartWidget />
+
+          <Link to="/cart">
+            <CartWidget />
+          </Link>
         </Toolbar>
       </Container>
     </AppBar>

@@ -6,8 +6,8 @@
         "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Old Prince podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
         "path":"/productos/royalcaninadult.jpeg",
         "stock":"18",
-        "price":"$8906,00"
-        
+        "price":"8906,00"
+ 
     },
     {
         "id": 2,
@@ -16,7 +16,7 @@
         "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Old Prince podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
         "path":"/productos/vitalcan.webp",
         "stock":"12",
-        "price":"$8875,00"
+        "price":"8875,00"
 
     },
     {
@@ -26,7 +26,7 @@
         "path":"/productos/oldprince.webp",
         "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Old Prince podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
         "stock":"28",
-        "price":"$8906,00"
+        "price":"8906,00"
 
     }
     ,
@@ -37,7 +37,7 @@
         "path":"/productos/collar_perro.webp",
         "description": "Collar Nylon My Famuly Varios colores",
         "stock":"17",
-        "price":"$4990,00"
+        "price":"4990,00"
 
     },
     {
@@ -47,7 +47,7 @@
         "path":"/productos/bozal_perro.webp",
         "description": "Bozal Pets Pro Red",
         "stock":"19",
-        "price":"$2540,00"
+        "price":"2540,00"
 
     },
     {
@@ -57,7 +57,7 @@
         "path":"/productos/pelota_perro.webp",
         "description": "Pelota Con Sonido Lazy Rellenable - 8 cm",
         "stock":"12",
-        "price":"$1540,00"
+        "price":"1540,00"
 
     },
     {
@@ -67,7 +67,7 @@
         "path":"/productos/alimento_gatos_exelent.webp",
         "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Old Prince podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
         "stock":"8",
-        "price":"$8660,00"
+        "price":"8660,00"
 
     },
     {
@@ -77,7 +77,7 @@
         "path":"/productos/alimento_gatos_exelent2.png",
         "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Old Prince podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
         "stock":"35",
-        "price":"$1540,00"
+        "price":"1540,00"
 
     },
     {
@@ -87,7 +87,7 @@
         "path":"/productos/alimento_gatos_exelent3.png",
         "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Old Prince podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
         "stock":"17",
-        "price":"$16510,00"
+        "price":"16510,00"
 
     },
     {
@@ -97,7 +97,7 @@
         "path":"/productos/juguete_gato1.webp",
         "description": "Los nuevos circuitos Catit Play vienen en tres modelos diferentes, para todos los gustos. Puedes elegir un circuito con masajeador con catnip, o si tu gato es un amante de la hierba gatera puedes escoger el circuito con germinador en el centro o incluso tienes la tradicional opción del rascador. Deja que tu gato disfrute de su opción favorita mientras juega con la pelota del circuito y la abeja.",
         "stock":"9",
-        "price":"$3900,00"
+        "price":"3900,00"
 
     },
     {
@@ -107,7 +107,7 @@
         "path":"/productos/juguetes_gatos2.webp",
         "description": "El Kit contiene: 1 Túnel de 54 x 24 (L x Al), 1 Catnip hierba,2 Pelotas con raton peludo, 1 Ratón con plumas,1 Circuito es una pista redonda con pelota de juego de plástico,4 Pelotas con cascabel, 1 Laser poderoso e IRRESISTIBLE TU GATO LO PERSEGUIRA hasta el final.",
         "stock":"6",
-        "price":"$1500,00"
+        "price":"1500,00"
 
     },
     {
@@ -117,7 +117,7 @@
         "path":"/productos/juguete_gato3.webp",
         "description": "El mejor compañero para el gatito: este juguete de peces vívido traerá a tu gato un montón de placer. Será muy útil para aliviar el estrés y relajar las emociones de los gatos. También alivia el aburrimiento de los gatos y la soledad cuando estás fuera de casa. Creemos que tu gato definitivamente mostrará un gran interés en este juguete para gatos con peces móviles.",
         "stock":"20",
-        "price":"$2999,00"
+        "price":"2999,00"
 
     },
     {
@@ -127,7 +127,7 @@
         "path":"/productos/alimento_peces1.webp",
         "description": "Alimento en escamas Nutrafin Max Peces Tropicales - 19gr",
         "stock":"23",
-        "price":"$890,00"
+        "price":"890,00"
 
     },
     {

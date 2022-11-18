@@ -4,6 +4,7 @@ import "./ItemCount.css";
 export default function Itemcount({ initial, stock, onAdd }) {
   const [count, setCount] = useState(parseInt(initial));
 
+
   const decrease = () => {
     setCount(count - 1);
   };

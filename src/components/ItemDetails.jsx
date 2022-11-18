@@ -1,11 +1,22 @@
-import React from "react";
-// import Box from "@mui/material/Box";
-// import Typography from "@mui/material/Typography";
-// import Modal from "@mui/material/Modal";
+import Reactç from "react";
+// import { CartContext } from "./CartContext";
 import ItemCount from "./ItemCount/ItemCount";
 import "./ItemDetails.css";
+import { useCartContext } from "./CartContext";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
-export default function ItemDetails({ product, open, handleClose, onAdd }) {
+export default function ItemDetails({ product }) {
+  const [goToCart, setGoToCart] = useState(false);
+  const { addProduct } = useCartContext();
+
+  const onAdd = (count) => {
+    setGoToCart(true);
+    addProduct(product, count);
+  };
+
+  console.log(product?.path);
+
   return (
     <div>
       <div className="target_product">
@@ -25,9 +36,12 @@ export default function ItemDetails({ product, open, handleClose, onAdd }) {
                 <h2> Stock {product?.stock} disponibles</h2>
               </div>
             </div>
-
             <div className="contador">
-              <ItemCount initial={1} stock={product?.stock} onAdd={onAdd} />
+              {goToCart ? (
+                <Link to="/cart"> Terminar Compra</Link>
+              ) : (
+                <ItemCount initial={1} stock={product?.stock} onAdd={onAdd} />
+              )}
             </div>
           </div>
           <div>
