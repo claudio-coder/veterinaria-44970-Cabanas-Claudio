@@ -4,29 +4,32 @@
         "name": "Alimento Royal Canin para Perro Medium Adulto - 15kg",
         "type": "alimento",
         "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Old Prince podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
-        "path":"/productos/royalcaninadult.jpeg",
-        "stock":"18",
-        "price":"8906,00"
+        "path":"https://http2.mlstatic.com/D_NQ_NP_910599-MLA50769907057_072022-O.webp",
+        "stock":18,
+        "price":8906,
+        "category":"perros"
  
     },
     {
         "id": 2,
-        "name": "Alimento Balanced Perro Adulto Raza Mediana - 20+2kg",
+        "name": "Alimento Balanced Perro Adulto Raza Mediana - 20+3kg",
         "type": "alimento",
         "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Old Prince podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
-        "path":"/productos/vitalcan.webp",
-        "stock":"12",
-        "price":"8875,00"
+        "path":"https://http2.mlstatic.com/D_NQ_NP_703738-MLA48657760694_122021-O.webp",
+        "stock":12,
+        "price":10349,
+        "category":"perros"
 
     },
     {
         "id": 3,
         "name": "Alimento Old Prince Novel Cordero y Arroz Perro Adulto Mediano y Grande - 15 Kg",
         "type": "alimento",
-        "path":"/productos/oldprince.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_2X_660215-MLA48168359381_112021-F.webp",
         "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Old Prince podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
-        "stock":"28",
-        "price":"8906,00"
+        "stock":28,
+        "price":8906,
+        "category":"perros"
 
     }
     ,
@@ -34,330 +37,363 @@
         "id": 4,
         "name": "Collar",
         "type": "accesorio",
-        "path":"/productos/collar_perro.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_2X_758198-MLA51261825260_082022-F.webp",
         "description": "Collar Nylon My Famuly Varios colores",
-        "stock":"17",
-        "price":"4990,00"
+        "stock":17,
+        "price":4990,
+        "category":"perros"
 
     },
     {
         "id": 5,
         "name": "Bozal perro",
         "type": "accesorio",
-        "path":"/productos/bozal_perro.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_2X_926832-MLA44581833859_012021-F.webp",
         "description": "Bozal Pets Pro Red",
-        "stock":"19",
-        "price":"2540,00"
+        "stock":19,
+        "price":2540,
+        "category":"perros"
 
     },
     {
         "id": 6,
         "name": "Pelota Con Sonido",
         "type": "accesorio",
-        "path":"/productos/pelota_perro.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_775096-MLA40834995619_022020-V.webp",
         "description": "Pelota Con Sonido Lazy Rellenable - 8 cm",
-        "stock":"12",
-        "price":"1540,00"
+        "stock":12,
+        "price":1540,
+        "category":"perros"
 
     },
     {
         "id": 7,
         "name": "Alimento Excellent Pollo y Arroz para Gato - 7,5 Kg",
         "type": "alimento",
-        "path":"/productos/alimento_gatos_exelent.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_2X_941342-MLA49052581175_022022-F.webp",
         "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Old Prince podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
-        "stock":"8",
-        "price":"8660,00"
+        "stock":8,
+        "price":8660,
+        "category":"gatos"
 
     },
     {
         "id": 8,
         "name": "Alimento Excellent Gato Sterilizad Pollo - 1 Kg",
         "type": "alimento",
-        "path":"/productos/alimento_gatos_exelent2.png",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_754835-MLA49961159241_052022-V.webp",
         "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Old Prince podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
-        "stock":"35",
-        "price":"1540,00"
+        "stock":35,
+        "price":1540,
+        "category":"gatos"
 
     },
     {
         "id": 9,
         "name": "Alimento Excellent Pollo y Arroz para Gato - 15 Kg",
         "type": "alimento",
-        "path":"/productos/alimento_gatos_exelent3.png",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_750094-MLA49052581132_022022-V.webp",
         "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Old Prince podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
-        "stock":"17",
-        "price":"16510,00"
+        "stock":17,
+        "price":16510,
+        "category":"gatos"
 
     },
     {
         "id": 10,
         "name": "Juguete para Gatos Rascador",
         "type": "accesorio",
-        "path":"/productos/juguete_gato1.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_2X_846508-MLA44913485730_022021-F.webp",
         "description": "Los nuevos circuitos Catit Play vienen en tres modelos diferentes, para todos los gustos. Puedes elegir un circuito con masajeador con catnip, o si tu gato es un amante de la hierba gatera puedes escoger el circuito con germinador en el centro o incluso tienes la tradicional opción del rascador. Deja que tu gato disfrute de su opción favorita mientras juega con la pelota del circuito y la abeja.",
-        "stock":"9",
-        "price":"3900,00"
+        "stock":9,
+        "price":2700,
+        "category":"gatos"
 
     },
     {
         "id": 11,
         "name": "Juguetes",
         "type": "accesorio",
-        "path":"/productos/juguetes_gatos2.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_2X_746557-MLA52285151195_112022-F.webp",
         "description": "El Kit contiene: 1 Túnel de 54 x 24 (L x Al), 1 Catnip hierba,2 Pelotas con raton peludo, 1 Ratón con plumas,1 Circuito es una pista redonda con pelota de juego de plástico,4 Pelotas con cascabel, 1 Laser poderoso e IRRESISTIBLE TU GATO LO PERSEGUIRA hasta el final.",
-        "stock":"6",
-        "price":"1500,00"
+        "stock":6,
+        "price":1500,
+        "category":"gatos"
 
     },
     {
         "id": 12,
         "name": "Tik Tok Juguete Interactivo Gatos Gatitos Pez",
         "type": "accesorio",
-        "path":"/productos/juguete_gato3.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_2X_705731-MLA51780989154_092022-F.webp",
         "description": "El mejor compañero para el gatito: este juguete de peces vívido traerá a tu gato un montón de placer. Será muy útil para aliviar el estrés y relajar las emociones de los gatos. También alivia el aburrimiento de los gatos y la soledad cuando estás fuera de casa. Creemos que tu gato definitivamente mostrará un gran interés en este juguete para gatos con peces móviles.",
-        "stock":"20",
-        "price":"2999,00"
+        "stock":20,
+        "price":2999,
+        "category":"gatos"
 
     },
     {
         "id": 13,
         "name": "Alimento en escamas Nutrafin Max Peces Tropicales - 19gr",
         "type": "alimento",
-        "path":"/productos/alimento_peces1.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_744935-MLA51292912537_082022-O.webp",
         "description": "Alimento en escamas Nutrafin Max Peces Tropicales - 19gr",
-        "stock":"23",
-        "price":"890,00"
+        "stock":23,
+        "price":890,
+        "category":"peces"
 
     },
     {
         "id": 14,
         "name": "Alimento Nutrafin Max Peces Tropicales - 38gr",
         "type": "alimento",
-        "path":"/productos/alimento_peces2.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_744935-MLA51292912537_082022-V.webp",
         "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Old Prince podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
-        "stock":"12",
-        "price":"$1440,00"
+        "stock":12,
+        "price":1440,
+        "category":"peces"
 
     },
     {
         "id": 15,
         "name": "Shulet Agua Fria - 10 Gr",
         "type": "alimento",
-        "path":"/productos/alimento_peces3.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_806892-MLA40128164045_122019-V.webp",
         "description": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Old Prince podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
-        "stock":"12",
-        "price":"$520,00"
+        "stock":12,
+        "price":520,
+        "category":"peces"
 
     },
     {
         "id": 16,
         "name": "Aqua Gravel Marina Rojo - 2 Kg",
         "type": "accesorio",
-        "path":"/productos/accesorio_peces1.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_888791-MLA48171243747_112021-V.webp",
         "description": "Aqua Gravel Marina Rosa 2 Kg para Acuarios",
-        "stock":"19",
-        "price":"$1420,00"
+        "stock":19,
+        "price":1420,
+        "category":"peces"
 
     },
     {
         "id": 17,
         "name": "Trampa para Cria Marina 3 en 1",
         "type": "accesorio",
-        "path":"/productos/accesorio_peces2.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_701068-MLA46823184631_072021-V.webp",
         "description": "Trampa para Cria Marina 3 en 1",
-        "stock":"7",
-        "price":"$1020,00"
+        "stock":7,
+        "price":1020,
+        "category":"peces"
 
     },
     {
         "id": 18,
         "name": "Bettera Atman Acrilica con Divisor - 6 L",
         "type": "accesorio",
-        "path":"/productos/accesorio_peces3.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_644892-MLA47235687226_082021-V.webp",
         "description": "BETTERA ACRÍLICA CAPACIDAD ´PARA 2 BETTAS.Posee:1 separador transparente,1 separador negro,1 tapa MEDIDAS: Largo 26 CM,Alto 21 CM ,Ancho 16 cm.",
-        "stock":"5",
-        "price":"$5640,00"
+        "stock":5,
+        "price":5640,
+        "category":"peces"
 
     },
     {
         "id": 19,
-        "name": "Tromipix Para Loros - 750 Gr",
+        "name": "Alimento Loros",
         "type": "alimento",
-        "path":"/productos/alimento_aves1.webp",
-        "description": "Tromipix Para Loros - 750 Gr",
-        "stock":"36",
-        "price":"$1320,00"
+        "path":"https://http2.mlstatic.com/D_NQ_NP_720864-MLA51375939388_092022-V.webp",
+        "description": "Alimento Loros, Guacamayos, Pericos Pack De 750g.",
+        "stock":36,
+        "price":1700,
+        "category":"aves"
 
     },
     {
         "id": 20,
         "name": "Alimento Para Aves Nelsoni Ranch Mix Silvestre - 750Gr",
         "type": "alimento",
-        "path":"/productos/alimento_aves2.png",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_906867-MLA51739121355_092022-V.webp",
         "description": "Alimento para aves silvestres a base de semillas 100% natural.",
-        "stock":"12",
-        "price":"$1540,00"
+        "stock":12,
+        "price":1540,
+        "category":"aves"
 
     },
     {
         "id": 21,
         "name": "Mix para Loros Nelsoni Ranch - 600Gr",
         "type": "alimento",
-        "path":"/productos/alimento_aves3.png",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_2X_981385-MLA44248855956_122020-F.webp",
         "description": "El Mix para loros de Nelsoni Ranch provee una optima nutrición con todas las vitaminas y nutrientes que las mejores semillas pueden dar, manteniendo a su ave vital y feliz.",
-        "stock":"23",
-        "price":"$660,00"
+        "stock":23,
+        "price":660,
+        "category":"aves"
 
     },
     {
         "id": 22,
-        "name": "Jaula Millex Redonda Dorada",
+        "name": "Jaula Aves Mediana Agapornis Canarios Diamantes Gould Arco",
         "type": "accesorio",
-        "path":"/productos/accesorio_aves1.webp",
-        "description": "Jaula Millex Redonda Dorada",
-        "stock":"11",
-        "price":"$1780,00"
+        "path":"https://http2.mlstatic.com/D_NQ_NP_718677-MLA45978275137_052021-V.webp",
+        "description": "Jaula Aves Mediana Agapornis Canarios Diamantes Gould Arco",
+        "stock":11,
+        "price":9049,
+        "category":"aves"
 
     },
     {
         "id": 23,
-        "name": "Jaula Redonda Grande - 65Cm",
+        "name": "Jaula Redonda",
         "type": "accesorio",
-        "path":"/productos/accesorio_aves2.webp",
-        "description": "Jaula Redonda Grande - 65Cm",
-        "stock":"12",
-        "price":"$1980,00"
+        "path":"https://http2.mlstatic.com/D_NQ_NP_2X_892548-MLA50530067525_062022-F.webp",
+        "description": "Jaula Redonda Con Portavela! Centro De Mesa Deco",
+        "stock":12,
+        "price":1980,
+        "category":"aves"
 
     },
     {
         "id": 24,
-        "name": "Bebedero Millex para Medicamentos - 40 Cc",
+        "name": "Bebedero Millex Pajaros 280 Cc",
         "type": "accesorio",
-        "path":"/productos/accesorio_aves3.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_2X_681327-MLA44675958678_012021-F.webp",
         "description": "Bebedero Millex Pajaros 280 Cc",
-        "stock":"12",
-        "price":"$310,00"
+        "stock":12,
+        "price":310,
+        "category":"aves"
 
     },
     {
         "id": 25,
         "name": "Heno Seleccionado Nelsoni Ranch Pequeños Mamiferos - 500Grs",
         "type": "accesorio",
-        "path":"/productos/alimento_conejo1.png",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_990727-MLA46873926445_072021-V.webp",
         "description": "El Heno “Nelsoni Ranch” constituye la base nutricional de conejos, cobayos, chinchillas, hamsters y otros pequeños roedores. Es una delicia natural que proporciona fibra con bajo contenido de calcio, disminuyendo la probabilidad de enfermedades en el tracto urinario.",
-        "stock":"12",
-        "price":"$790,00"
+        "stock":12,
+        "price":830,
+        "category":"conejos"
 
     },
     {
         "id": 26,
-        "name": "Alimento Nelsoni Ranch Para Conejos - 750Gr",
+        "name": "Alimento Balanceado Conejo Premium 750gr Angora Holandes Lop",
         "type": "accesorio",
-        "path":"/productos/alimento_conejo2.png",
-        "description": "El Balanceado para Conejos de Nelsoni Ranch provee una optima nutrición con todas las vitaminas y nutrientes, manteniendo a su roedor vital y feliz. Especialmente formulado para diferentes variedades de conejos, balanceado cría profesional.",
-        "stock":"23",
-        "price":"$480,00"
+        "path":"https://http2.mlstatic.com/D_NQ_NP_2X_928168-MLA41397022560_042020-F.webp",
+        "description": "El Balanceado para Conejos  provee una optima nutrición con todas las vitaminas y nutrientes, manteniendo a su roedor vital y feliz. Especialmente formulado para diferentes variedades de conejos, balanceado cría profesional.",
+        "stock":23,
+        "price":480,
+        "category":"conejos"
 
     },
     {
         "id": 27,
         "name": "Alimento Balanceado Conejos Especial Balanceado 3 Kg",
         "type": "accesorio",
-        "path":"/productos/alimento_conejo3.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_938923-MLA50359252471_062022-V.webp",
         "description": "Excelente balanceado a base de alfalfa y cereales con crunchies de frutas y verduras. Alimento a base de materias primas de primera calidad que constituye una dieta balanceada a la medida de su mascota.INGREDIENTES Alfalfa, cereales, avena, maíz y soja CONTENIDO DEL PAQUETE x 26 KG",
-        "stock":"19",
-        "price":"$1765,00"
+        "stock":19,
+        "price":1765,
+        "category":"conejos"
 
     },
     {
         "id": 28,
         "name": "Arnés Pretal P/gatos-conejos-hurones+correa 1,5mt Talle 3-4",
         "type": "accesorio",
-        "path":"/productos/accesorio_conejo1.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_838066-MLA50655738192_072022-V.webp",
         "description": "Arnés anti escape para mascota de estructura cónica o muy ágiles y flexibles. A diferencia de los arneses o pretales para perros, estos arneses estás diseñados para que mascotas como gatos, conejos y hurones puedan ser paseados con seguridad. El arnés para mini pet de GHATO'S Accesorios para Mascotas sujeta la zona del cuello y del tórax y permite movilidad y flexión.",
-        "stock":"12",
-        "price":"$1690,00"
+        "stock":12,
+        "price":1690,
+        "category":"conejos"
 
     },
     {
         "id": 29,
         "name": "Conejera Madera Con Accesorios 1 Mt X 40 X 40",
         "type": "accesorio",
-        "path":"/productos/accesorio_conejo2.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_966635-MLA50440367432_062022-V.webp",
         "description": "Casita Conejos+ Alfombrita sanitaria + accesorios De regalo: comedero, bebedero, juguete, escondite múltiple, 1 kg alimento balanceado, 1 repuesto alfombra sanitario.",
-        "stock":"4",
-        "price":"$16000,00"
+        "stock":4,
+        "price":16000,
+        "category":"conejos"
 
     },
     {
         "id": 30,
         "name": "Jaula Living World Zoo Zone Chica - S",
         "type": "accesorio",
-        "path":"/productos/accesorio_conejo3.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_677548-MLA44594720127_012021-V.webp",
         "description": "Medidas:71cmX45.5cmX32.5cm",
-        "stock":"3",
-        "price":"$18225,00"
+        "stock":3,
+        "price":18225,
+        "category":"conejos"
 
     },
     {
         "id": 31,
         "name": "Nutrafin Max Tortugas 65g Alimento Pellet Camarones Gammarus",
         "type": "alimento",
-        "path":"/productos/alimento_exotico1.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_704571-MLA44885480251_022021-V.webp",
         "description":"Nutrafin Max Tortuga Pellets es una fórmula nutritiva altamente apetitosa coloreada naturalmente por sus ingredientes en un formato de alto valor que contiene 30 g de pellets. Esta dieta de alta calidad está enriquecida con camarones gammarus y vitamina D, excelentes fuentes de calcio para una cáscara dura",
-        "stock":"25",
-        "price":"$1194,00"
+        "stock":25,
+        "price":1194,
+        "category":"exoticos"
 
     },
     {
         "id": 32,
-        "name": "Pelota Con Sonido",
+        "name": "Alimento Tetra Reptomin 3kg Balde Tortugas - Aqua Virtual",
         "type": "alimento",
-        "path":"/productos/pelota_perro.webp",
-        "description": "Pelota Con Sonido Lazy Rellenable - 8 cm",
-        "stock":"12",
-        "price":"$1540,00"
+        "path":"https://http2.mlstatic.com/D_NQ_NP_2X_858044-MLA44255619727_122020-F.webp",
+        "description": "Alimento de primera calidad para tortugas, ranas y tritones. Un favorito desde hace mucho tiempo entre los criadores y entusiastas de las tortugas mascotas, ReptoMin® es un bastón flotante para todas las tortugas de agua, anfibios y otros reptiles acuáticos. De alto valor nutricional y fabricados con estrictos estándares de calidad, los productos ReptoMin han demostrado ser fácilmente aceptados por docenas de especies. Vitaminas y calcio, ReptoMin es un alimento rico en proteínas y formulado científicamente.",
+        "stock":16,
+        "price":1540,
+        "category":"exoticos"
 
     },
     {
         "id": 33,
-        "name": "Pelota Con Sonido",
+        "name": "Tetra Reptomin X 300 Grs",
         "type": "alimento",
-        "path":"/productos/pelota_perro.webp",
-        "description": "Pelota Con Sonido Lazy Rellenable - 8 cm",
-        "stock":"12",
-        "price":"$1540,00"
+        "path":"https://http2.mlstatic.com/D_NQ_NP_2X_730117-MLA41546019754_042020-F.webp",
+        "description": "Calidad y variedad del alimento son las condiciones mas importantes para unas tortugas sanas. A los animales jóvenes se les debe dar comida diariamente, los ejemplares adultos comen con menor frecuencia y tardan varios días en digerir la comida.",
+        "stock":12,
+        "price":1540,
+        "category":"exoticos"
 
     },
     {
         "id": 34,
         "name": "Terrario Para Reptil",
         "type": "accesorio",
-        "path":"/productos/accesorio_exotico1.webp",
+        "path":"https://http2.mlstatic.com/D_NQ_NP_678768-MLA51263174157_082022-V.webp",
         "description": "Terrario Para Reptil Exo Terra Small Wide 45 X 45 X 45cm K9",
-        "stock":"12",
-        "price":"$1540,00"
+        "stock":6,
+        "price":44000,
+        "category":"exoticos"
 
     },
     {
         "id": 35,
-        "name": "Pelota Con Sonido",
+        "name": "Comedero Bebedero Terrario Reptiles Gecko Pogona Tenebrios",
         "type": "accesorio",
-        "path":"/productos/pelota_perro.webp",
-        "description": "Pelota Con Sonido Lazy Rellenable - 8 cm",
-        "stock":"12",
-        "price":"$1540,00"
+        "path":"https://http2.mlstatic.com/D_NQ_NP_650959-MLA51327139486_082022-V.webp",
+        "description": "Comedero Bebedero Terrario Reptiles Gecko Pogona Tenebrios",
+        "stock":2,
+        "price":3074,
+        "category":"exoticos"
 
     },
     {
         "id": 36,
-        "name": "Pelota Con Sonido",
+        "name": "Terrario Exoterra Wide Large",
         "type": "accesorio",
-        "path":"/productos/pelota_perro.webp",
-        "description": "Pelota Con Sonido Lazy Rellenable - 8 cm",
-        "stock":"12",
-        "price":"$1540,00"
+        "path":"https://http2.mlstatic.com/D_NQ_NP_733456-MLA51742158677_092022-V.webp",
+        "description": "Terrario Exoterra Large Wide. Incluye craneo Exoterra de resina, RoofTop Exoterra para dos lamparas UV, y Sostenedor de lámpara de calor.",
+        "stock":3,
+        "price":119000,
+        "category":"exoticos"
 
     }
 ]

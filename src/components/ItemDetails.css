@@ -1,5 +1,5 @@
 .target_product{
-    height: 700px;
+    height: 950px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -40,5 +40,11 @@ border-radius: 10px;
     text-align: center;
     font-weight: normal;
 
+
+}
+.buy-finish{
+    background-color: rgb(161, 207, 161);
+    border-radius: 5px;
+    text-decoration: none;
 
 }

@@ -9,8 +9,21 @@ export default function Cart() {
   if (cart.length === 0) {
     return (
       <>
-        <p>No hay compras en el carrito</p>
-        <Link to="../">Hacer Compras</Link>
+        <div
+          style={{
+            backgroundColor: "rgb(250, 235, 215)",
+            height: 400,
+            textAlign: "center",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-around",
+          }}
+        >
+          <h2>No hay compras en el carrito</h2>
+          <Link to="../">
+            <button className="buy">Hacer Compras</button>
+          </Link>
+        </div>
       </>
     );
   }
@@ -19,7 +32,7 @@ export default function Cart() {
       {cart.map((product) => (
         <ItemCart key={product.id} product={product} />
       ))}
-      <p>Total: {totalPrice()}</p>
+      <p>Total:${totalPrice()}</p>
     </>
   );
 }

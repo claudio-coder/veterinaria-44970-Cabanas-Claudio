@@ -30,6 +30,7 @@
     .buy{
         background-color: rgb(161, 207, 161);
         border-radius: 5px;
+        text-decoration: none;
 
     }
     .cart_counter{

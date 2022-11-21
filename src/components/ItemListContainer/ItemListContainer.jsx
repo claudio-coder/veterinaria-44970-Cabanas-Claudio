@@ -3,17 +3,34 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import "./ItemListContainer.css";
 import { Link, useParams } from "react-router-dom";
+// import { getFirestore, collection, getDocs, query, where } from "firebase/firestore";
+import ItemList from "../ItemList/ItemList";
 
 export default function ItemListContainer() {
   const { idraza } = useParams();
 
   const [categories, setCategories] = useState([]);
 
+  // useEffect(() => {
+  //   const querydb = getFirestore();
+  //   const queryCollection = collection(querydb, "products");
+  //   if (idraza) {
+  //     const queryFilter = query(queryCollection, where("category", "==", idraza));
+  //     getDocs(queryFilter).then((res) =>
+  //       setCategories(res.docs.map((product) => ({ id: product.id, ...product.data() })))
+  //     );
+  //   } else {
+  //     getDocs(queryCollection).then((res) =>
+  //       setCategories(res.docs.map((product) => ({ id: product.id, ...product.data() })))
+  //     );
+  //   }
+  // }, [idraza]);
+
   useEffect(() => {
     setCategories([]);
 
     setTimeout(() => {
-      fetch(`/data.json`)
+      fetch(`/products.json`)
         .then((response) => response.json())
         .then((data) => {
           if (!!idraza) {
@@ -25,9 +42,7 @@ export default function ItemListContainer() {
     }, 2000);
   }, [idraza]);
 
-  // const onAdd = (cantidad) => {
-  //   console.log(`Compraste ${cantidad} unidades`);
-  // };
+  console.log(categories);
 
   return (
     <div>
@@ -37,14 +52,14 @@ export default function ItemListContainer() {
         ) : (
           categories.map((aCategory, idx) => (
             <div key={`category-${idx}`}>
-              <h2 className="category_name">{aCategory.description}</h2>
+              <h2 className="category_name"> Alimento y accesorios para {aCategory.category}</h2>
               <div className="target_general">
-                {aCategory.products.map((aProduct, productIdx) => (
+                {aCategory.categories.map((aProduct, productIdx) => (
                   <Grid item xs={6} key={`product-${productIdx}`}>
                     <Link to={`/item/${aProduct.id}`} className="target">
                       <div key={aProduct.id} className="target_img">
-                        <img src={aProduct.path} alt="" width={80} className="mascota_img" />
-                        <p> {aProduct.name}</p>
+                        <img src={aProduct.path} alt="" width={50} className="mascota_img" />
+                        <p style={{ margin: "0" }}> {aProduct.name}</p>
                       </div>
                     </Link>
                   </Grid>
@@ -56,4 +71,12 @@ export default function ItemListContainer() {
       </div>
     </div>
   );
+
+  // return (
+  //   <>
+  //     <div className="cuerpo">
+  //       <ItemList categories={categories} />
+  //     </div>
+  //   </>
+  // );
 }

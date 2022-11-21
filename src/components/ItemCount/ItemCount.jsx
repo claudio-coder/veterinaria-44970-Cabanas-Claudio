@@ -4,7 +4,6 @@ import "./ItemCount.css";
 export default function Itemcount({ initial, stock, onAdd }) {
   const [count, setCount] = useState(parseInt(initial));
 
-
   const decrease = () => {
     setCount(count - 1);
   };
@@ -29,7 +28,7 @@ export default function Itemcount({ initial, stock, onAdd }) {
       </div>
       <div className="cart">
         <button className="buy" disabled={stock <= 0} onClick={() => onAdd(count)}>
-          Comprar
+          Subir al Carrito
         </button>
       </div>
     </div>

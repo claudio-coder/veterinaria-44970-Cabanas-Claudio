@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useCartContext } from "../CartContext";
 import "./ItemCart.css";
 
@@ -15,7 +15,7 @@ export default function ItemCart({ product }) {
       <div>
         <p> Titulo: {product.name}</p>
         <p>Cantidad: {product.quantity}</p>
-        <p>Precio unit: {product.price}</p>
+        <p>Precio unit:$ {product.price}</p>
         <p>Subtotal: $ {product.quantity * product.price}</p>
         <button onClick={() => removeProduct(product.id)}>ELIMINAR</button>
       </div>

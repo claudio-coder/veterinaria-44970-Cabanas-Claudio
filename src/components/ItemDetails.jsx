@@ -1,4 +1,4 @@
-import Reactç from "react";
+import React from "react";
 // import { CartContext } from "./CartContext";
 import ItemCount from "./ItemCount/ItemCount";
 import "./ItemDetails.css";
@@ -15,8 +15,6 @@ export default function ItemDetails({ product }) {
     addProduct(product, count);
   };
 
-  console.log(product?.path);
-
   return (
     <div>
       <div className="target_product">
@@ -30,7 +28,7 @@ export default function ItemDetails({ product }) {
                 <h1>{product?.name}</h1>
               </div>
               <div>
-                <h1>{product?.price}</h1>
+                <h1> ${product?.price}</h1>
               </div>
               <div>
                 <h2> Stock {product?.stock} disponibles</h2>
@@ -38,7 +36,10 @@ export default function ItemDetails({ product }) {
             </div>
             <div className="contador">
               {goToCart ? (
-                <Link to="/cart"> Terminar Compra</Link>
+                <Link to="/cart">
+                  {/* {" "} */}
+                  <button className="buy-finish">Terminar Compra</button>
+                </Link>
               ) : (
                 <ItemCount initial={1} stock={product?.stock} onAdd={onAdd} />
               )}

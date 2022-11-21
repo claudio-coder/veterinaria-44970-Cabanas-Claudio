@@ -5,8 +5,9 @@
     height: 800px;
     display:grid;
     grid-template-columns: repeat(3,2fr);
-     justify-items: center;
+    justify-items: center;
     align-items: center;
+
     
 }
 .target {
@@ -45,7 +46,7 @@
 
 }
 .mascota_img{
-    border-radius: 50px;
+    border-radius: 40px;
 }
 .target_img{
     display: flex;
@@ -60,3 +61,4 @@ justify-items: center;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
+
