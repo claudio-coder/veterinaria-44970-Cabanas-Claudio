@@ -10,10 +10,10 @@ export default function ItemDetailsContainer() {
 
   useEffect(() => {
     const db = getFirestore();
-    const product = doc(db, "products", "6rzLfa9QW1WT0jzrDaFP");
+    const product = doc(db, "products", iditem);
 
     getDoc(product).then((res) => setProduct({ id: res.id, ...res.data() }));
-  }, []);
+  }, [iditem]);
 
   // useEffect(() => {
   //   fetch("/products.json")

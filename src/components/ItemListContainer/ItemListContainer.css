@@ -2,9 +2,9 @@
     background-color: antiquewhite;
     background-repeat: no-repeat;
     font-family: Poppins;
-    height: 800px;
+    height: 1000px;
     display:grid;
-    grid-template-columns: repeat(3,2fr);
+    grid-template-columns: repeat(6,6fr);
     justify-items: center;
     align-items: center;
 

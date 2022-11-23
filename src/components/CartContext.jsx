@@ -4,6 +4,8 @@ export const CartContext = React.createContext([]);
 
 export const useCartContext = () => useContext(CartContext);
 
+// export default function ItemDetails({ product }) {
+
 const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
