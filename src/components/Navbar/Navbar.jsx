@@ -22,8 +22,7 @@ const pages = [
   { label: "Aves", link: "/raza/aves" },
   { label: "Conejos", link: "/raza/conejos" },
   { label: "Exóticos", link: "/raza/exoticos" },
-  { label: "Mi Cuenta", link: "/MiCuenta" },
-  { label: "Envio Prog", link: "/EnvioProg" },
+  { label: "Checkout", link: "/Checkout" },
 ];
 
 export default function Navbar() {

@@ -4,6 +4,10 @@
     height: 400px;
     font-size: 20px;
     margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+
 }
 
 
@@ -23,4 +27,19 @@
 
 .contactanos_logo{
     padding-left: 150px;
+}
+@media (max-width:760px) {
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        height: 600px;
+    
+        
+    
+        font-size: 15px;
+    }
+
 }

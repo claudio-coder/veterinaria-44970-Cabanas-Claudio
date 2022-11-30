@@ -6,23 +6,45 @@ import { Link, useParams } from "react-router-dom";
 import { getFirestore, collection, getDocs, query, where } from "firebase/firestore";
 import ItemList from "../ItemList/ItemList";
 
+const PRODUCTS_BY_CATEGORY = {
+  perros: [],
+  gatos: [],
+  peces: [],
+  aves: [],
+  conejos: [],
+  exoticos: [],
+};
+
 export default function ItemListContainer() {
   const { idraza } = useParams();
 
-  const [categories, setCategories] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const querydb = getFirestore();
     const queryCollection = collection(querydb, "products");
+    setIsLoading(true);
     if (idraza) {
       const queryFilter = query(queryCollection, where("category", "==", idraza));
-      getDocs(queryFilter).then((res) =>
-        setCategories(res.docs.map((product) => ({ id: product.id, ...product.data() })))
-      );
+      getDocs(queryFilter).then((res) => {
+        const products = res.docs.map((product) => ({ id: product.id, ...product.data() }));
+
+        products.forEach((aProduct) => {
+          PRODUCTS_BY_CATEGORY[aProduct.category].push(aProduct);
+        });
+
+        setIsLoading(false);
+      });
     } else {
-      getDocs(queryCollection).then((res) =>
-        setCategories(res.docs.map((product) => ({ id: product.id, ...product.data() })))
-      );
+      getDocs(queryCollection).then((res) => {
+        const products = res.docs.map((product) => ({ id: product.id, ...product.data() }));
+
+        products.forEach((aProduct) => {
+          PRODUCTS_BY_CATEGORY[aProduct.category].push(aProduct);
+        });
+
+        setIsLoading(false);
+      });
     }
   }, [idraza]);
 
@@ -41,8 +63,6 @@ export default function ItemListContainer() {
   //       });
   //   }, 2000);
   // }, [idraza]);
-
-  console.log(categories);
 
   // return (
   //   <div>
@@ -103,7 +123,7 @@ export default function ItemListContainer() {
   return (
     <>
       <div className="cuerpo">
-        <ItemList categories={categories} />
+        {isLoading ? <CircularProgress /> : <ItemList productsByCategory={PRODUCTS_BY_CATEGORY} />}
       </div>
     </>
   );

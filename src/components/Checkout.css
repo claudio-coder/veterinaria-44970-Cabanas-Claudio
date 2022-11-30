@@ -1,0 +1,23 @@
+.data_entry{
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.buy_confirm{
+    background-color: rgb(161, 207, 161);
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+
+}
+
+
+
+.target_datos{
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+}

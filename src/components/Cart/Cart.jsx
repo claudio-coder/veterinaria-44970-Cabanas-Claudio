@@ -33,6 +33,9 @@ export default function Cart() {
         <ItemCart key={product.id} product={product} />
       ))}
       <p>Total:${totalPrice()}</p>
+      <Link to="../checkout">
+        <button className="buy">Finalizar Compra</button>
+      </Link>
     </>
   );
 }

@@ -4,14 +4,10 @@ import "./ItemCart.css";
 
 export default function ItemCart({ product }) {
   const { removeProduct } = useCartContext();
-  console.log(product.quantity);
-  console.log(product.price);
-
-  console.log(product.quantity + product.price);
 
   return (
     <div className="itemCart">
-      <img src={product.path} alt={product.name} />
+      <img src={product.path} alt={product.name} className="img_item"/>
       <div>
         <p> Titulo: {product.name}</p>
         <p>Cantidad: {product.quantity}</p>
