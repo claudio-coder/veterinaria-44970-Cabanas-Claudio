@@ -14,15 +14,6 @@ export default function ItemDetailsContainer() {
     getDoc(product).then((res) => setProduct({ id: res.id, ...res.data() }));
   }, [iditem]);
 
-  // useEffect(() => {
-  //   fetch("/products.json")
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       const item = data.find((anItem) => anItem.id.toString() === iditem);
-  //       setProduct(item);
-  //     });
-  // }, []);
-
   return (
     <div>
       <ItemDetails product={product} />

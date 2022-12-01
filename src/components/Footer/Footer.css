@@ -1,7 +1,7 @@
 .footer {
     background-color: black;
     color: white;
-    height: 400px;
+    /* height: 400px; */
     font-size: 20px;
     margin-top: 0px;
     display: grid;
@@ -35,7 +35,6 @@
         align-items: center;
         align-content: center;
         justify-items: center;
-        height: 600px;
     
         
     

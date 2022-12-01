@@ -5,13 +5,11 @@ import "./FinishBuy.css";
 export default function FinishBuy() {
   const location = useLocation();
   const { orderId } = location.state;
-  console.log("Es eesto", orderId);
   return (
     <>
       <div
         style={{
           backgroundColor: "rgb(250, 235, 215)",
-          height: 400,
           textAlign: "center",
           display: "flex",
           flexDirection: "column",

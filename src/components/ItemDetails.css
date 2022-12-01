@@ -1,25 +1,15 @@
 .target_product{
-    height: 950px;
-    /* display: grid; */
-    /* grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    justify-items: center;
-     */
      display: flex;
      flex-direction: row;
      justify-content: space-evenly;
      align-items: center;
+     margin: 20px;
 
 }
 .product_datos{
-    height: 800px;
     width: 500px;
     border: 1.5px solid black;
     border-radius: 10px;
-    /* display: grid;
-    grid-template-columns: repeat(1,2fr);
-    justify-items: flex-start;
-    align-items: flex-start; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -32,7 +22,6 @@
 }
 
 .target_datos{
-    height: 700px;
     display: grid;
     grid-template-columns: repeat(1,3fr);
     justify-items: center;
@@ -52,13 +41,7 @@
 .contador{
     margin: 10px;
 }
-.contador_img{
-    height: 100px;
-}
 
-.information{
-    height: 430px;
-}
 .description{
     width: 450px;
     text-align: center;
@@ -89,24 +72,36 @@
         width: 400px;
     
     }
+    .target_name{
+        font-size: 10px;
+    }
+    
 .target_description{
     width: 350px;
 }
 .description{
     width: 350px;
+    font-size: 20px;
 }
 
 .mascota_img{
     width: 400px;
 }
+.targetstock{
+    font-size: 10px;
+}
 
 }
 
+@media (max-width:900px) {
+    .description{
+        font-size: 18px;
+    }
+}
 @media (max-width:850px) {
     .product_datos{      
     
         width: 300px;
-        height: 850px;
     
     }
 .target_description{
@@ -114,7 +109,7 @@
 }
 .description{
     width: 250px;
-    font-size: 20px;
+    font-size: 15px;
 
 }
 
@@ -134,7 +129,7 @@
 }
 .description{
     width: 200px;
-    font-size: 20px;
+    font-size: 15px;
 
 }
 .target_name{
@@ -150,7 +145,7 @@
 
 @media (max-width:510px) {
     .target_product{
-        height: 1200px;
+        height: 900px;
          display: flex;
          flex-direction: column;
          justify-content: space-evenly;
@@ -160,7 +155,6 @@
     .product_datos{      
     
         width: 250px;
-        height: 850px;
    
     
     }
@@ -169,7 +163,7 @@
 }
 .description{
     width: 200px;
-    font-size: 18px;
+    font-size: 15px;
 
 }
 .target_name{

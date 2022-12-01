@@ -32,24 +32,9 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      {/* <Grid container spacing={0} alignItems="center">
-        <Grid
-          spacing={0}
-          direction="row"
-          alignItems="center"
-          justify="center"
-          item
-          xs={6}
-        > */}
-
-      {/* </Grid> */}
-
-      {/* <Grid className="contactanos_logo" item xs={6}> */}
       <div>
         <img src={logo_nuevo} alt="" width={300} />
       </div>
-      {/* </Grid> */}
-      {/* </Grid> */}
     </div>
   );
 }

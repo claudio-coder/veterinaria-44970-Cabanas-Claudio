@@ -18,7 +18,7 @@ export default function ItemDetails({ product }) {
     <div>
       <div className="target_product">
         <div className="img_product">
-          <img src={product?.path} alt="" width={400} className="mascota_img" />
+          <img src={product?.path} alt="" width={250} className="mascota_img" />
         </div>
         <div className="product_datos">
           <div className="target_datos">

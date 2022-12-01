@@ -30,8 +30,6 @@ export default function Checkout() {
     const db = getFirestore();
     const orders = collection(db, "orders");
     addDoc(orders, order).then((orderInsert) => {
-      console.log(orderInsert.id);
-
       cart.forEach((item) => {
         const documento = doc(db, "products", item.id);
         updateDoc(documento, { stock: increment(-item.quantity) });
@@ -49,7 +47,6 @@ export default function Checkout() {
         <div
           style={{
             backgroundColor: "rgb(250, 235, 215)",
-            height: 400,
             textAlign: "center",
             display: "flex",
             flexDirection: "column",
@@ -69,7 +66,6 @@ export default function Checkout() {
       <div
         style={{
           backgroundColor: "rgb(250, 235, 215)",
-          height: 400,
           textAlign: "center",
           display: "flex",
           flexDirection: "column",
@@ -79,7 +75,7 @@ export default function Checkout() {
         <div className="data_entry">
           <div>
             <input
-              className="target_datos"
+              className="target_info"
               placeholder="Nombre"
               value={nombre}
               onChange={(e) => setNombre(e.target.value)}
@@ -87,7 +83,7 @@ export default function Checkout() {
           </div>
           <div>
             <input
-              className="target_datos"
+              className="target_info"
               placeholder="Telefono"
               value={tel}
               onChange={(e) => setTel(e.target.value)}
@@ -95,7 +91,7 @@ export default function Checkout() {
           </div>
           <div>
             <input
-              className="target_datos"
+              className="target_info"
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}

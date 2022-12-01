@@ -19,8 +19,6 @@ export default function Itemcount({ initial, stock, onAdd }) {
     setStockcount(parseInt(stock));
   }, [initial, stock]);
 
-  console.log(count);
-  console.log(stockcount);
 
   return (
     <>
