@@ -7,9 +7,9 @@ export default function ItemCart({ product }) {
 
   return (
     <div className="itemCart">
-      <img src={product.path} alt={product.name} className="img_item"/>
+      <img src={product.path} alt={product.name} className="img_item" />
       <div>
-        <p> Titulo: {product.name}</p>
+        <p> Nombre: {product.name}</p>
         <p>Cantidad: {product.quantity}</p>
         <p>Precio unit:$ {product.price}</p>
         <p>Subtotal: $ {product.quantity * product.price}</p>

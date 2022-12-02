@@ -63,7 +63,7 @@ export default function Navbar() {
             <div>Medico</div>
             <div>Veterinario</div>
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none", textDecoration: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -71,7 +71,6 @@ export default function Navbar() {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
-              textDecoration="none"
             >
               <MenuIcon />
             </IconButton>
@@ -82,19 +81,16 @@ export default function Navbar() {
               anchorOrigin={{
                 vertical: "bottom",
                 horizontal: "left",
-                // textDecoration: "none",
               }}
               keepMounted
               transformOrigin={{
                 vertical: "top",
                 horizontal: "left",
-                textDecoration: "none",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
-                textDecoration: "none",
               }}
             >
               {pages.map((page) => (

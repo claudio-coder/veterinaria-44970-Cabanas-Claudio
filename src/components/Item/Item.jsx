@@ -8,7 +8,7 @@ export default function Item({ info }) {
       <div className="target-item">
         <Link to={`/item/${info.id}`} className="target_img-item">
           <img src={info.path} alt="" width={50} className="mascota_img" />
-          <p>{info.type}</p>
+          <p style={{ textDecoration: "none" }}>{info.type}</p>
         </Link>
       </div>
     </>

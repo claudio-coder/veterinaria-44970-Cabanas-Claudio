@@ -9,6 +9,7 @@ export default function Cart() {
     return (
       <>
         <div
+          className="cuerpo_buy"
           style={{
             backgroundColor: "rgb(250, 235, 215)",
             textAlign: "center",

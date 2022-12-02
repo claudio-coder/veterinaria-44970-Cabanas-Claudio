@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { useCartContext } from "./CartContext";
+import { useCartContext } from "../CartContext";
 import { addDoc, doc, updateDoc, getFirestore, collection } from "firebase/firestore";
 import { increment } from "firebase/firestore";
 import { Link } from "react-router-dom";
@@ -45,6 +45,7 @@ export default function Checkout() {
     return (
       <>
         <div
+          className="cuerpo_check"
           style={{
             backgroundColor: "rgb(250, 235, 215)",
             textAlign: "center",

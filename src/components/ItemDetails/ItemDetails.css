@@ -84,9 +84,9 @@
     font-size: 20px;
 }
 
-.mascota_img{
+/* .mascota_img{
     width: 400px;
-}
+} */
 .targetstock{
     font-size: 10px;
 }
@@ -113,9 +113,9 @@
 
 }
 
-.mascota_img{
+/* .mascota_img{
     width: 300px;
-}
+} */
 
 }
 @media (max-width:700px) {
@@ -137,9 +137,9 @@
 
 }
 
-.mascota_img{
+/* .mascota_img{
     width: 250px;
-}
+} */
 
 }
 
@@ -171,9 +171,9 @@
 
 }
 
-.mascota_img{
+/* .mascota_img{
     width: 250px;
-}
+} */
 
 
 }
