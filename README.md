@@ -32,12 +32,12 @@ Cuando se ingresa a la aplicación se despliega la misma con un Navbar y todas l
 En el Navbar tenemos los siguientes opciones:
 
 - **Inicio** : El mismo nos lleva a la pagina principal que es la misma que cuando se inicia la aplicación por primera vez.
-- **Perros** :tw-1f436: : Nos lleva a la ventana de productos de la raza Perros
-- **Gatos** :tw-1f43a: : Nos lleva a la ventana de productos de la raza Gatos
-- **Peces** :tw-1f420: : Nos lleva a la ventana de productos de la raza Peces
-- **Aves** :tw-1f426: : Nos lleva a la ventana de productos de la raza Aves
-- **Conejos** :tw-1f430: : Nos lleva a la ventana de productos de la raza Conejos
-- **Exóticos** :tw-1f40a: : Nos lleva a la ventana de productos de la raza Exóticos
+- **Perros** : Nos lleva a la ventana de productos de la raza Perros
+- **Gatos** : Nos lleva a la ventana de productos de la raza Gatos
+- **Peces** : Nos lleva a la ventana de productos de la raza Peces
+- **Aves** : Nos lleva a la ventana de productos de la raza Aves
+- **Conejos** : Nos lleva a la ventana de productos de la raza Conejos
+- **Exóticos** : Nos lleva a la ventana de productos de la raza Exóticos
 
 Una vez que sabemos que producto queremos consultar/comprar debemos hacer click en ese producto.
 En ese momento se despliega la venta con el producto seleccionado que trae los siguientes datos:
