@@ -52,7 +52,7 @@ En ese momento se despliega la venta con el producto seleccionado que trae los s
 ### Como comprar el producto
 
 Ya estando en la ventana del producto seleccionado y luego de determinar la cantidad de unidades a comprar. Se debe hacer click en el boton **_Subir al Carrito_**. Ahi se despliga otro boton que nos da la opción de **_Ir al Carrito_**.
-Si en lugar de ir al carrito se desea seguir comprando , podemos hacer click en **_Inicio _**o seleccionar la raza que queremos consultar (Perros, Gatos, etc).
+Si en lugar de ir al carrito se desea seguir comprando , podemos hacer click en **_Inicio_** o seleccionar la raza que queremos consultar (Perros, Gatos, etc).
 
 ##### Consultando el Carrito
 
@@ -64,7 +64,7 @@ Ahí se despliega en la pantalla todos los productos seleccionados con los sigui
 - [x] Precio unitario
 - [x] SubTotal
 
-Debajo de estos datos se tiene el **_Total _**de toda la compra y junto a este total esta un boton **_Finalizar Compra_**.
+Debajo de estos datos se tiene el **_Total _** de toda la compra y junto a este total esta un boton **_Finalizar Compra_**.
 
 Al hacer click en ese botón se despliega una pantalla con los datos sugeridos para completar la compra, los mismos son:
 
