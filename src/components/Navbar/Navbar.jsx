@@ -33,7 +33,7 @@ export default function Navbar() {
   };
 
   const handleCloseNavMenu = () => {
-    setAnchorElNav(true);
+    setAnchorElNav(null);
   };
 
   return (

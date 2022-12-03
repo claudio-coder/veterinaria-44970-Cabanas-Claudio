@@ -15,7 +15,30 @@ export default function Checkout() {
   const [email, setEmail] = useState("");
   const { clearCart } = useCartContext();
 
+  // const [isNoOk, setNoOk] = useState(true);
+
   function handleClickBuyButton() {
+    // setNoOk(true);
+
+    // if (nombre === nombreValido) {
+    //   setNombre("Error Solo Letras");
+    //   setNoOk(false);
+    //   return;
+    // }
+    // if (tel !== "manuel") {
+    //   setTel("Error Solo Numeros");
+    //   setNoOk(false);
+    //   return;
+    // }
+    // if (email !== "cabanas") {
+    //   setEmail("Error Solo Numeros");
+    //   setNoOk(false);
+    //   return;
+    // }
+
+    // if (!isNoOk) {
+    //   return;
+    // } else {
     const order = {
       buyer: { nombre, tel, email },
       items: cart.map((product) => ({
@@ -29,6 +52,10 @@ export default function Checkout() {
 
     const db = getFirestore();
     const orders = collection(db, "orders");
+
+    if (!nombre || !email || !tel) {
+      return;
+    }
     addDoc(orders, order).then((orderInsert) => {
       cart.forEach((item) => {
         const documento = doc(db, "products", item.id);
@@ -38,8 +65,10 @@ export default function Checkout() {
       navigate("../finishbuy", {
         state: { orderId: orderInsert.id },
       });
+
+      clearCart();
     });
-    clearCart();
+    // }
   }
   if (cart.length === 0) {
     return (
@@ -62,6 +91,7 @@ export default function Checkout() {
       </>
     );
   }
+
   return (
     <div>
       <div

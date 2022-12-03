@@ -12,7 +12,7 @@ import Checkout from "./components/Ckeckout/Checkout";
 export default function App() {
   return (
     <CartProvider>
- <BrowserRouter>
+    <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
