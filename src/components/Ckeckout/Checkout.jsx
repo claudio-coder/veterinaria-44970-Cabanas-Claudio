@@ -15,30 +15,7 @@ export default function Checkout() {
   const [email, setEmail] = useState("");
   const { clearCart } = useCartContext();
 
-  // const [isNoOk, setNoOk] = useState(true);
-
   function handleClickBuyButton() {
-    // setNoOk(true);
-
-    // if (nombre === nombreValido) {
-    //   setNombre("Error Solo Letras");
-    //   setNoOk(false);
-    //   return;
-    // }
-    // if (tel !== "manuel") {
-    //   setTel("Error Solo Numeros");
-    //   setNoOk(false);
-    //   return;
-    // }
-    // if (email !== "cabanas") {
-    //   setEmail("Error Solo Numeros");
-    //   setNoOk(false);
-    //   return;
-    // }
-
-    // if (!isNoOk) {
-    //   return;
-    // } else {
     const order = {
       buyer: { nombre, tel, email },
       items: cart.map((product) => ({
@@ -68,7 +45,6 @@ export default function Checkout() {
 
       clearCart();
     });
-    // }
   }
   if (cart.length === 0) {
     return (
