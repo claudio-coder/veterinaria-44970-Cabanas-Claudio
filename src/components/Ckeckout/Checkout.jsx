@@ -1,4 +1,5 @@
 import React from "react";
+import { CircularProgress } from "@mui/material";
 import { useState } from "react";
 import { useCartContext } from "../CartContext";
 import { addDoc, doc, updateDoc, getFirestore, collection } from "firebase/firestore";
@@ -6,6 +7,7 @@ import { increment } from "firebase/firestore";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./Checkout.css";
+import { isValidEmail, isValidPhoneNumber, isValidName } from "../../utils";
 
 export default function Checkout() {
   const navigate = useNavigate();
@@ -13,9 +15,21 @@ export default function Checkout() {
   const [nombre, setNombre] = useState("");
   const [tel, setTel] = useState("");
   const [email, setEmail] = useState("");
-  const { clearCart } = useCartContext();
+  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   function handleClickBuyButton() {
+    if (!nombre || !email || !tel) {
+      return;
+    }
+
+    if (!isValidEmail(email) || !isValidPhoneNumber(tel) || isValidName(nombre)) {
+      setError("Hay un error en los inputs");
+      return;
+    }
+
+    setError(false);
+
     const order = {
       buyer: { nombre, tel, email },
       items: cart.map((product) => ({
@@ -27,12 +41,10 @@ export default function Checkout() {
       total: totalPrice(),
     };
 
+    setIsLoading(true);
     const db = getFirestore();
     const orders = collection(db, "orders");
 
-    if (!nombre || !email || !tel) {
-      return;
-    }
     addDoc(orders, order).then((orderInsert) => {
       cart.forEach((item) => {
         const documento = doc(db, "products", item.id);
@@ -42,10 +54,9 @@ export default function Checkout() {
       navigate("../finishbuy", {
         state: { orderId: orderInsert.id },
       });
-
-      clearCart();
     });
   }
+
   if (cart.length === 0) {
     return (
       <>
@@ -85,6 +96,7 @@ export default function Checkout() {
               className="target_info"
               placeholder="Nombre"
               value={nombre}
+              disabled={isLoading}
               onChange={(e) => setNombre(e.target.value)}
             />
           </div>
@@ -93,6 +105,7 @@ export default function Checkout() {
               className="target_info"
               placeholder="Telefono"
               value={tel}
+              disabled={isLoading}
               onChange={(e) => setTel(e.target.value)}
             />
           </div>
@@ -100,14 +113,27 @@ export default function Checkout() {
             <input
               className="target_info"
               placeholder="Email"
+              disabled={isLoading}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div>
-            <input type="button" onClick={handleClickBuyButton} className="buy_confirm" value="COMPRAR" />
+            <input
+              type="button"
+              disabled={isLoading}
+              onClick={handleClickBuyButton}
+              className="buy_confirm"
+              value="COMPRAR"
+            />
           </div>
+          {error}
         </div>
+        {isLoading && (
+          <div>
+            <CircularProgress />
+          </div>
+        )}
         <div>
           <h1>TOTAL A PAGAR:${totalPrice()}</h1>
         </div>

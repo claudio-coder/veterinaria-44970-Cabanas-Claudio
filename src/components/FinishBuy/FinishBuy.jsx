@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useCartContext } from "../CartContext";
 import "./FinishBuy.css";
 
 export default function FinishBuy() {
+  const { clearCart } = useCartContext();
   const location = useLocation();
   const { orderId } = location.state;
+
+  useEffect(() => {
+    clearCart();
+  }, []);
+
   return (
     <>
       <div
